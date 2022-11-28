@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- Our style -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/listing.css">
+</head>
+
+<body>
+    <header>
+        <img src="./images/logo.png" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listing.html" class="active">Listing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <img src="./images/icons/account-circle.png" alt="account" class="account-circle">
+
+        <a href="#" title="Add your ad">
+            <button class="btn-add-circle">
+                <img src="./images/icons/note-plus-outline.png" alt="add ad" class="add-circle">
+            </button>
+        </a>
+    </header>
+    <section class="section-1">
+        <div>
+            <!-- filter options -->
+            <div class="filter">
+                <form action="" method="" name="">
+                    <div class="filter-title">
+                        <img src="./images/icons/filter.png" alt="filter">
+                        <h3>Filters</h3>
+                    </div>
+                    <!-- <div class="filter-options"> -->
+                    <div class="filter-option">
+                        <label for="categories">Location</label>
+                        <select name="categories" id="categories">
+                            <option value="electronics">Electronics</option>
+                            <option value="vehicles">Vehicles</option>
+                            <option value="fashion">Fashion</option>
+                            <option value="furniture">Furniture</option>
+                        </select>
+                    </div>
+                    <div class="filter-option">
+                        <label for="state">State</label>
+                        <select name="state" id="state">
+                            <option value="ben arous">Ben Arous</option>
+                            <option value="tunis">Tunis</option>
+                            <option value="ariana">Ariana</option>
+                            <option value="sousse">Sousse</option>
+                        </select>
+                    </div>
+                    <div class="filter-option">
+                        <label for="city">City</label>
+                        <select name="city" id="city">
+                            <option value="rades">Rades</option>
+                            <option value="tunis">Tunis</option>
+                            <option value="megrine">Megrine</option>
+                            <option value="ezzahra">Ezzahra</option>
+                        </select>
+                    </div>
+                    <div class="filter-option">
+                        <label for="price">Price min-max</label>
+                        <input type="range" name="price" id="price" min="1" max="999999" step="1" value="1"
+                            class="input-range">
+                        <output>1</output>
+                    </div>
+                    <div class="filter-option">
+                        <fieldset>
+                            <legend>Condition</legend>
+                            <div class="radio-values">
+                                <input type="radio" name="condition" id="both" value="both" checked>
+                                <label for="both">Both</label>
+                            </div>
+                            <div class="radio-values">
+                                <input type="radio" name="condition" id="new" value="new">
+                                <label for="new">New</label>
+                            </div>
+                            <div class="radio-values">
+                                <input type="radio" name="condition" id="old" value="old">
+                                <label for="old">Old</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="filter-option">
+                        <fieldset>
+                            <legend>Model</legend>
+                            <div class="elements">
+                                <div class="checkbox-values">
+                                    <input type="checkbox" name="hp" id="hp" value="hp">
+                                    <label for="hp">HP</label>
+                                </div>
+                                <div class="checkbox-values">
+                                    <input type="checkbox" name="lenovo" id="lenovo" value="lenovo">
+                                    <label for="lenovo">Lenovo</label>
+                                </div>
+                                <div class="checkbox-values">
+                                    <input type="checkbox" name="asus" id="asus" value="asus">
+                                    <label for="asus">Asus</label>
+                                </div>
+                                <div class="checkbox-values">
+                                    <input type="checkbox" name="acer" id="acer" value="acer">
+                                    <label for="acer">Acer</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <!-- </div> -->
+                </form>
+            </div>
+            <!-- results -->
+            <div class="results">
+                <div class="results-header">
+                    <div class="results-header-content">
+                        <h3>Results found</h3>
+                        <span>100</span>
+                    </div>
+                    <div class="results-header-sort">
+                        <img src="./images/icons/sort.png" alt="sort">
+                        <select name="sort" id="sort" style="width: 150px;">
+                            <option value="price">Price</option>
+                            <option value="date">Date</option>
+                            <option value="condition">Alphabetical</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="results-body">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./images/lenovo legion y520.webp" alt="rover">
+                        </div>
+                        <div class="card-body">
+                            <h3>
+                                Lenovo Legion Y520
+                            </h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="location-details">
+                                <img src="./images/icons/map-marker-right.png" alt="Location">
+                                <span class="place">Rades</span>
+                            </div>
+                            <div class="price-details">
+                                <span class="price">2000 dt</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./images/lenovo legion y520.webp" alt="rover">
+                        </div>
+                        <div class="card-body">
+                            <h3>
+                                Lenovo Legion Y520
+                            </h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="location-details">
+                                <img src="./images/icons/map-marker-right.png" alt="Location">
+                                <span class="place">Rades</span>
+                            </div>
+                            <div class="price-details">
+                                <span class="price">2000 dt</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./images/lenovo legion y520.webp" alt="rover">
+                        </div>
+                        <div class="card-body">
+                            <h3>
+                                Lenovo Legion Y520
+                            </h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="location-details">
+                                <img src="./images/icons/map-marker-right.png" alt="Location">
+                                <span class="place">Rades</span>
+                            </div>
+                            <div class="price-details">
+                                <span class="price">2000 dt</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./images/lenovo legion y520.webp" alt="rover">
+                        </div>
+                        <div class="card-body">
+                            <h3>
+                                Lenovo Legion Y520
+                            </h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="location-details">
+                                <img src="./images/icons/map-marker-right.png" alt="Location">
+                                <span class="place">Rades</span>
+                            </div>
+                            <div class="price-details">
+                                <span class="price">2000 dt</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./images/lenovo legion y520.webp" alt="rover">
+                        </div>
+                        <div class="card-body">
+                            <h3>
+                                Lenovo Legion Y520
+                            </h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="location-details">
+                                <img src="./images/icons/map-marker-right.png" alt="Location">
+                                <span class="place">Rades</span>
+                            </div>
+                            <div class="price-details">
+                                <span class="price">2000 dt</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./images/lenovo legion y520.webp" alt="rover">
+                        </div>
+                        <div class="card-body">
+                            <h3>
+                                Lenovo Legion Y520
+                            </h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="location-details">
+                                <img src="./images/icons/map-marker-right.png" alt="Location">
+                                <span class="place">Rades</span>
+                            </div>
+                            <div class="price-details">
+                                <span class="price">2000 dt</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./images/lenovo legion y520.webp" alt="rover">
+                        </div>
+                        <div class="card-body">
+                            <h3>
+                                Lenovo Legion Y520
+                            </h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="location-details">
+                                <img src="./images/icons/map-marker-right.png" alt="Location">
+                                <span class="place">Rades</span>
+                            </div>
+                            <div class="price-details">
+                                <span class="price">2000 dt</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./images/lenovo legion y520.webp" alt="rover">
+                        </div>
+                        <div class="card-body">
+                            <h3>
+                                Lenovo Legion Y520
+                            </h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="location-details">
+                                <img src="./images/icons/map-marker-right.png" alt="Location">
+                                <span class="place">Rades</span>
+                            </div>
+                            <div class="price-details">
+                                <span class="price">2000 dt</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./images/lenovo legion y520.webp" alt="rover">
+                        </div>
+                        <div class="card-body">
+                            <h3>
+                                Lenovo Legion Y520
+                            </h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="location-details">
+                                <img src="./images/icons/map-marker-right.png" alt="Location">
+                                <span class="place">Rades</span>
+                            </div>
+                            <div class="price-details">
+                                <span class="price">2000 dt</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="results-footer">
+                    <div class="center">
+                        <div class="pagination">
+                            <a href="#">&laquo;</a>
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">&raquo;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="description">
+            <div class="company">
+                <img src="./images/logo.png" alt="Logo">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed illum eos facilis? Labore unde neque
+                    corrupti molestiae laudantium, animi asperiores similique amet? Non quo tenetur ullam, distinctio
+                    sit perspiciatis beatae.</p>
+            </div>
+            <div class="newsletter">
+                <h2>Subscribe to our newsletter!</h2>
+                <form name="f-newsletter" class="f-newsletter" action="" method="">
+                    <input type="email" name="newsleter" id="newsletter">
+                    <button class="btn-newsletter" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="all-links">
+            <div class="social-media">
+                <h2>Social Media</h2>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="./images/icons/facebook.png" alt="Facebook">
+                    <span>/Marketplace</span>
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="./images/icons/instagram.png" alt="Instagram">
+                    <span>Marketplace</span>
+                </a>
+                <a href="https://www.twitter.com/">
+                    <img src="./images/icons/twitter.png" alt="Twitter">
+                    <span>@Marketplace</span>
+                </a>
+            </div>
+            <div class="categories">
+                <h2>Top Categories</h2>
+                <ul>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Vehicles</a></li>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">Furniture</a></li>
+                    <li><a href="#">Animal</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="locations">
+                <h2>Top Locations</h2>
+                <ul>
+                    <li><a href="#">Tunis</a></li>
+                    <li><a href="#">Ariana</a></li>
+                    <li><a href="#">Sousse</a></li>
+                    <li><a href="#">Rades</a></li>
+                    <li><a href="#">Sfax</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="useful-link">
+                <h2>Useful Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="copyrights">
+            <p> TEK-DEV <span style="color:#551A8B;">&#169;</span> Copyright 2022 </p>
+        </div>
+    </footer>
+</body>
+
+</html>

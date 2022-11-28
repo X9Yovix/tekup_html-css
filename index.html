@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <!-- Our style -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
@@ -14,13 +16,216 @@
         <img src="./images/logo.png" alt="Logo">
         <nav>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Listing</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="listing.html" >Listing</a></li>
+                <li><a href="contact.html" >Contact</a></li>
             </ul>
         </nav>
+        <img src="./images/icons/account-circle.png" alt="account" class="account-circle">
+
+        <a href="#" title="Add your ad">
+            <button class="btn-add-circle">
+                <img src="./images/icons/note-plus-outline.png" alt="add ad" class="add-circle">
+            </button>
+        </a>
     </header>
-    
+    <section class="section-1">
+        <div class="video-container">
+            <video playsinline autoplay muted loop id="video-background">
+                <source src="./videos/8252781_1.webm" type="video/webm">
+                <source src="./videos/8252781_1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="content">
+                <h1>Buy & Sell Anything.</h1>
+                <div class="actions">
+                    <input type="text" placeholder="keywords" name="search" id="search">
+                    <select name="cities" id="cities">
+                        <option value="none" selected hidden>Select an Option</option>
+                        <optgroup label="Governorate of Ben Arous">
+                            <option value="Ben Arous">Ben Arous</option>
+                            <option value="Rades">Rades</option>
+                            <option value="Megrine">Megrine</option>
+                            <option value="Mourouj">Mourouj</option>
+                        </optgroup>
+                        <optgroup label="Governorate of Tunis">
+                            <option value="Marsa">Marsa</option>
+                            <option value="Menzah">Menzah</option>
+                            <option value="Omrane">Omrane</option>
+                            <option value="Bardo">Bardo</option>
+                        </optgroup>
+                    </select>
+                    <button class="btn-search">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-2">
+        <div class="featured-ads">
+            <h1>Featured Ads</h1>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <img src="./images/lenovo legion y520.webp" alt="rover">
+                </div>
+                <div class="card-body">
+                    <h3>
+                        Lenovo Legion Y520
+                    </h3>
+                </div>
+                <div class="card-footer">
+                    <div class="location-details">
+                        <img src="./images/icons/map-marker-right.png" alt="Location">
+                        <span class="place">Rades</span>
+                    </div>
+                    <!-- <div>
+                        |
+                    </div> -->
+                    <div class="price-details">
+                        <span class="price">2000 dt</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="./images/lenovo legion 5.jpg" alt="rover">
+                </div>
+                <div class="card-body">
+                    <h3>
+                        Lenovo Legion 5
+                    </h3>
+                </div>
+                <div class="card-footer">
+                    <div class="location-details">
+                        <img src="./images/icons/map-marker-right.png" alt="Location">
+                        <span class="place">Ezzahra</span>
+                    </div>
+                    <!-- <div>
+                        |
+                    </div> -->
+                    <div class="price-details">
+                        <span class="price">3800 dt</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="./images/iphone11.webp" alt="rover">
+                </div>
+                <div class="card-body">
+                    <h3>
+                        Iphone 11
+                    </h3>
+                </div>
+                <div class="card-footer">
+                    <div class="location-details">
+                        <img src="./images/icons/map-marker-right.png" alt="Location">
+                        <span class="place">Bardo</span>
+                    </div>
+                    <!-- <div>
+                        |
+                    </div> -->
+                    <div class="price-details">
+                        <span class="price">2000 dt</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="./images/golf 6.jpg" alt="rover">
+                </div>
+                <div class="card-body">
+                    <h3>
+                        Golf 6
+                    </h3>
+                </div>
+                <div class="card-footer">
+                    <div class="location-details">
+                        <img src="./images/icons/map-marker-right.png" alt="Location">
+                        <span class="place">Megrine</span>
+                    </div>
+                    <!-- <div>
+                        |
+                    </div> -->
+                    <div class="price-details">
+                        <span class="price">50 000 dt</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="description">
+            <div class="company">
+                <img src="./images/logo.png" alt="Logo">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed illum eos facilis? Labore unde neque
+                    corrupti molestiae laudantium, animi asperiores similique amet? Non quo tenetur ullam, distinctio
+                    sit perspiciatis beatae.</p>
+            </div>
+            <div class="newsletter">
+                <h2>Subscribe to our newsletter!</h2>
+                <form name="f-newsletter" class="f-newsletter" action="" method="">
+                    <input type="email" name="newsleter" id="newsletter">
+                    <button class="btn-newsletter" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="all-links">
+            <div class="social-media">
+                <h2>Social Media</h2>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="./images/icons/facebook.png" alt="Facebook">
+                    <span>/Marketplace</span>
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="./images/icons/instagram.png" alt="Instagram">
+                    <span>Marketplace</span>
+                </a>
+                <a href="https://www.twitter.com/">
+                    <img src="./images/icons/twitter.png" alt="Twitter">
+                    <span>@Marketplace</span>
+                </a>
+            </div>
+            <div class="categories">
+                <h2>Top Categories</h2>
+                <ul>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Vehicles</a></li>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">Furniture</a></li>
+                    <li><a href="#">Animal</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="locations">
+                <h2>Top Locations</h2>
+                <ul>
+                    <li><a href="#">Tunis</a></li>
+                    <li><a href="#">Ariana</a></li>
+                    <li><a href="#">Sousse</a></li>
+                    <li><a href="#">Rades</a></li>
+                    <li><a href="#">Sfax</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="useful-link">
+                <h2>Useful Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="copyrights">
+            <p> TEK-DEV <span style="color:#551A8B;">&#169;</span> Copyright 2022 </p>
+        </div>
+    </footer>
 </body>
 
 </html>

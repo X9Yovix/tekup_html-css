@@ -1,0 +1,110 @@
+/* section 1 */
+.section-1 {
+    background-color: #fefefe;
+}
+
+.title-contact {
+    text-align: center;
+}
+
+.sub-title-contact {
+    text-align: center;
+    padding-top: 3%;
+}
+
+.container-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 20% 10% 20%;
+}
+
+.container-details .phone-number,
+.container-details .email-address {
+    width: 50%;
+}
+
+.phone-number {
+    margin-right: 10%;
+}
+
+.email-address {
+    margin-left: 10%;
+}
+
+.container-details .phone-number,
+.container-details .email-address {
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.container-details .phone-number .content p:first-child,
+.container-details .email-address .content p:first-child {
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(80, 75, 76);
+}
+
+.container-details img {
+    margin: 20px 0;
+    height: 40px;
+}
+
+.content {
+    padding: 40px;
+    text-align: center;
+}
+
+/* section2 */
+
+.section-2 {
+    background-color: #f8f8f8;
+}
+
+.container-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-form .form {
+    margin-left: 100px;
+}
+
+/* .container-form .frame {
+    margin-left: 100px;
+} */
+
+.btn-submit {
+    cursor: pointer;
+    color: white;
+    width: 200px;
+    background-color: #4c9e9e;
+    transition: all 1s ease-in-out;
+}
+
+.btn-submit:hover {
+    border: 20px solid black;
+    border-top-color: #4c9e9e;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    font-size: 16px;
+    width: 250px;
+    background-color: #551A8B;
+}
+
+table {
+    width: 100%;
+}
+
+.form input {
+    width: 100%;
+}
+
+section {
+    padding: 100px 0;
+}

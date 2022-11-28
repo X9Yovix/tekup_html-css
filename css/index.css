@@ -1,0 +1,180 @@
+/* section 1 */
+.video-container {
+    position: relative;
+    /* height: 100vh; */
+    width: 100%;
+    /* height: 100%; */
+    height: 700px;
+    /* overflow: hidden; */
+    /* text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* z-index: -100; */
+}
+
+#video-background {
+    position: absolute;
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    /* height: 100%; */
+    height: 700px;
+}
+
+.content {
+    position: relative;
+    background: rgba(0, 0, 0, 0.85);
+    color: #f1f1f1;
+    width: 100%;
+    /* height: 100vh; */
+    height: 700px;
+    padding: 20px;
+    /* margin: 0 auto; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
+    /* z-index: 1000; */
+    /* min-height: 100vh; */
+}
+
+.content h1 {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.content .actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 5%;
+}
+
+.content * {
+    margin: 0 10px 10px 0;
+}
+
+.content input[type="text"], .content select, .content .btn-search {
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.content input[type="text"] {
+    width: 30%;
+}
+
+.content input[type="text"]:focus {
+    outline: 4px solid #4c9e9e;
+    color: #4c9e9e;
+}
+
+.content select {
+    width: 15%;
+}
+
+.content select:focus {
+    appearance: none;
+    outline: 4px solid #4c9e9e;
+}
+
+.content .btn-search {
+    width: 10%;
+    color: #4c9e9e;
+    /* box-shadow: 1px 1px #551A8B; */
+    box-shadow: 0px 8px 15px #4c9e9e;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+.content .btn-search:hover {
+    /* border: 4px solid #4c9e9e; */
+    background-color: #4c9e9e;
+    color: white;
+    box-shadow: none;
+}
+
+/* section 2 */
+.section-2 {
+    background-color: #f1f1f1;
+    padding: 120px 20px;
+}
+
+.featured-ads h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+    /* margin-top: 5%; */
+}
+
+.section-2 .container {
+    margin-top: 30px;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* .card {
+    background-color: #fefefe;
+    border-radius: 5px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
+    padding: 10px;
+    width: 300px;
+    height: 330px;
+}
+
+.card-header img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body h3 {
+    text-align: center;
+}
+
+.card-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-footer img {
+    height: 27px;
+}
+
+.card-footer .price-details, .card-footer .location-details {
+    display: flex;
+}
+
+.card-footer .price-details .price, .card-footer .location-details .place {
+    border-radius: 50px;
+    color: white;
+    padding: 2px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.card-footer .price-details .price {
+    background-color: #4c9e9e;
+}
+
+
+.card-footer .price-details {
+    padding-right: 15px;
+}
+
+.card-footer .location-details {
+    padding-left: 10px;
+}
+
+.card-footer .location-details .place {
+    margin-left: 3px;
+    background-color: #551A8B;
+} */
