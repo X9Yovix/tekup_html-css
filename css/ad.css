@@ -1,0 +1,127 @@
+.section-1 {
+    display: flex;
+}
+
+.ad {
+    width: 60%;
+}
+
+.seller {
+    width: 30%;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.ad .ad-header,
+.ad .ad-body {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+}
+
+.ad .ad-pictures {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.ad-body, .ad-description {
+    padding: 0 50px;
+}
+
+.ad .ad-pictures .picture {
+    height: 300px;
+    object-fit: contain;
+}
+
+.seller-details {
+    text-align: center;
+    border: solid black;
+    padding: 20px;
+}
+
+.contact, .phone,
+.mail {
+    border: solid black;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+
+}
+
+.seller-details {
+    display: block;
+
+}
+
+.report {
+    display: block;
+    align-items: center;
+    border: solid;
+    width: 220px;
+    height: 80px;
+    margin-top: 50px;
+    margin-left: 120px;
+    text-align: center;
+    box-shadow: 9px 9px 0px -3px rgba(0, 0, 0, 0.53);
+    cursor: pointer;
+
+}
+
+.report .button {
+    background-color: white;
+    margin-bottom: 0px;
+    border-radius: none;
+    text-align: center;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.report img {
+    display: flex;
+    background-color: none;
+    position: relative;
+    left: 15px;
+}
+
+.phone img, .mail img, .contact img, .ad-header img, .ad-category img, .marker2 img {
+    height: 20px;
+}
+
+.ad-header h2 {
+    margin-left: 50px;
+}
+
+.time {
+    position: relative;
+    left: 600px;
+}
+.marker2 img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.price {
+    position: relative;
+    left: 494px;
+}
+
+.marker img {
+    height: 30px;
+}
+
+.marker {
+    display: flex;
+    margin-left: 2px;
+}
+
+.ad-category {
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.ad-description p {
+    text-align: justify;
+}
